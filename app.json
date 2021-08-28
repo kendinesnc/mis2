@@ -2,7 +2,7 @@
   "name": "MusicBot",
   "description": "Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Mehmetgul0202/missmusic",
+  "repository": "https://github.com/Mehmetgul0202/missmusic1",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
