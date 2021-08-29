@@ -4,4 +4,4 @@
 
 STRING_NAME ;
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Mehmetgul0202/getStringName-8)
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Mehmetgul0202/GenerateStringSession-11)
