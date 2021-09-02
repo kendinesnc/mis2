@@ -33,12 +33,12 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("reload") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Müzik Botu Sorunsuz Çalışıyor..✅**""",
+      await message.reply_text("""**Admin Listesi Güncellendi..✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Destek", url="https://t.me/MissMusicSupport")
+                        "🔊 Aktif Üye Çekme Hizmeti", url="https://t.me/uye_ekleme_hizmeti")
                 ]
             ]
         )
