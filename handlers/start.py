@@ -24,7 +24,7 @@ async def start(_, message: Message):
                         "Sohbet Grubumuz 🎙️", url="https://t.me/intikamailesi"
                     )],
                 [
-                    InlineKeyboardButton(text= "😇Sahibim😇", url = "https://t.me/MissKraL")
+                    InlineKeyboardButton(text= "Üye Ekleme Hizmeti", url = "https://t.me/uye_ekleme_hizmeti")
                 ]
             ]
         ),
