@@ -24,16 +24,17 @@ async def start(_, message: Message):
                         "Sohbet Grubumuz 🎙️", url="https://t.me/intikamailesi"
                     )],
                 [
+                    InlineKeyboardButton(text= "DC BOTU", url = "https://t.me/Missdcbot")
+                ],[
                     InlineKeyboardButton(text= "🔥Sahip🔥", url = "https://t.me/Deepstudybro")
-                ]
-            ]
+            ],]
         ),
      disable_web_page_preview=True
     )
 
 @Client.on_message(filters.command("reload") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Admin Listesi Güncellendi..✅**""",
+      await message.reply_text("""** ✅ Admin Listesi Güncellendi.. ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
