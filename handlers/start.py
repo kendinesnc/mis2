@@ -26,7 +26,7 @@ async def start(_, message: Message):
                 [
                     InlineKeyboardButton(text= "DC BOTU", url = "https://t.me/Missdcbot")
                 ],[
-                    InlineKeyboardButton(text= "🔥Sahip🔥", url = "https://t.me/Deepstudybro")
+                    InlineKeyboardButton(text= "🔥Sahip🔥", url = "https://t.me/intikamsahibi")
             ],]
         ),
      disable_web_page_preview=True
