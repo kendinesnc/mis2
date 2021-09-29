@@ -6,8 +6,6 @@ if path.exists("local.env"):
     load_dotenv("local.env")
 
 load_dotenv()
-
-class Veez(object):
         admins = {}
         BOT_TOKEN = getenv("BOT_TOKEN", None)
         API_ID = int(getenv("API_ID", "6"))
