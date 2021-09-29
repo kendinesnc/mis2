@@ -263,7 +263,7 @@ async def startvideo(client, m: Message):
 
     elif replied.video or replied.document:
 
-        msg = await m.reply("📥 Video İndirilyor..")
+        msg = await m.reply("📥 Video İndiriliyor..")
 
         video = await client.download_media(m.reply_to_message)
 
@@ -327,7 +327,8 @@ async def startvideo(client, m: Message):
 
                 reply_markup=keyboard,
 
-                caption=f"💡 **video streaming started !**\n\n» **join to video chat on the top to watch the video.**")
+                caption=f"💡 **video akışı başladı!** !**\n\n» (**katıl videoyu izlemek için üstte görüntülü sohbet yapın.**")
+ 
 
             return await msg.delete()
 
@@ -339,9 +340,9 @@ async def startvideo(client, m: Message):
 
     else:
 
-        await m.reply("💭 please reply to video or video file to stream")
+        await m.reply("💭 lütfen akış için videoya veya video dosyasına cevap verin")
 
-@Client.on_message(command(["vstop", f"vstop@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["vbitir", f"vbitir@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 
 @authorized_users_only
 
@@ -369,7 +370,7 @@ async def stopvideo(client, m: Message):
 
         await call_py.leave_group_call(chat_id)
 
-        await m.reply("✅ **successfully left vc !**")
+        await m.reply("✅ **Başarıyla Bitirildi !**")
 
     except Exception as e:
 
@@ -383,7 +384,7 @@ async def handler(client: PyTgCalls, update: Update):
 
     await call_py.leave_group_call(chat_id) 
 
-@Client.on_message(command(["cplay", f"cplay@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["cplay", f"cplay@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 
 @authorized_users_only
 
