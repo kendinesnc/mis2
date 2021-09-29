@@ -32,9 +32,9 @@ async def start(_, message: Message):
      disable_web_page_preview=True
     )
 
-@Client.on_message(filters.command("reload") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("botcum") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""** ✅ Admin Listesi Güncellendi.. ✅**""",
+      await message.reply_text("""** ✅ Burdayım Sahibim @intikamsahibi ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
