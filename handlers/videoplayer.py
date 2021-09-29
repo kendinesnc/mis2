@@ -1,10 +1,10 @@
 import os
 import asyncio
 import subprocess
-from pytgcalls.pytgcalls import idle
-from pytgcalls.pytgcalls import PyTgCalls
-from pytgcalls.pytgcalls import StreamType
-from pytgcalls.pytgcalls.types import Update
+from pytgcalls import idle
+from pytgcalls import PyTgCalls
+from pytgcalls import StreamType
+from pytgcalls.types import Update
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -13,7 +13,7 @@ from helpers.decorators import authorized_users_only
 from helpers.filters import command
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import ExtractorError
-from pytgcalls.pytgcalls.types.input_stream import (
+from pytgcalls.types.input_stream import (
     VideoParameters,
     AudioParameters,
     InputAudioStream,
