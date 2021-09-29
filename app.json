@@ -38,6 +38,16 @@
         "SUDO_USERS": {
             "description": "list of user ids to be added to sudo member list",
             "required": true
+        },    
+        "SUPPORT_GROUP": {
+          "description": "Grup dukungan MusicPlayer Anda Tanpa Menggunakan ==> @ <== [skip ini jika Anda tidak punya]",
+          "required": false,
+          "value": ""
+       },    
+        "STICKER_ID": {
+          "description": "CAACAgUAAxkBAAFF-Bdg-i8JvMgppo9DCVkFV9pPVSprzgACdwIAAsgM0VdqqiQQ6Hdw7CAE"",
+          "required": false,
+          "value": ""
         },
         "DURATION_LIMIT": {
             "description": "maximum duration limit for downloadable videos (in minutes)",
