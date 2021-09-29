@@ -110,7 +110,7 @@ def youtube(url: str):
 
         return None, None
 
-@Client.on_message(command(["vplay", f"vplay@{Veez.BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["voynat", f"voynat@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 
 @authorized_users_only
 
