@@ -48,6 +48,18 @@
           "description": "CAACAgUAAxkBAAFF-Bdg-i8JvMgppo9DCVkFV9pPVSprzgACdwIAAsgM0VdqqiQQ6Hdw7CAE"",
           "required": false,
           "value": ""
+       },
+        "CHANNEL_NAME": {
+            "description": "your bot token from @botfather",
+            "required": true
+        },
+        "GROUP_NAME": {
+            "description": "your bot token from @botfather",
+            "required": true
+        },
+        "OWNER_NAME": {
+            "description": "your bot token from @botfather",
+            "required": true
         },
         "DURATION_LIMIT": {
             "description": "maximum duration limit for downloadable videos (in minutes)",
