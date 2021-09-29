@@ -150,7 +150,7 @@ async def startvideo(client, m: Message):
 
         if len(m.command) < 2:
 
-            await m.reply("💡 **reply to video or provide youtube/live video url to start video streaming**")
+            await m.reply("💡 **videoya yanıt verin veya video akışını başlatmak için youtube/canlı video URL'sini sağlayın*")
 
         else:
 
@@ -190,7 +190,7 @@ async def startvideo(client, m: Message):
 
             FFMPEG_PROCESS[chat_id] = process
 
-            msg = await m.reply("🔁 **starting video streaming...**")
+            msg = await m.reply("🔁 **video akışı başlatılıyor...**")
 
             await asyncio.sleep(10)
 
@@ -248,7 +248,7 @@ async def startvideo(client, m: Message):
 
                     reply_markup=keyboard,
 
-                    caption=f"💡 **video streaming started!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{duration}`\n\n» **join to video chat on the top to watch the video.**")
+                    caption=f"💡 **video akışı başladı!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{duration}`\n\n» **join to video chat on the top to watch the video.**")
 
                 return await msg.delete()
 
