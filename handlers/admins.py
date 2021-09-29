@@ -21,7 +21,7 @@ async def update_admin(client, message):
     a[message.chat.id] = new_ads
     await message.reply_text("✅ Bot **başarıyla yeniden başlatıldı\n\n• **Yönetici listesi** **güncellendi.**")
 
-@Client.on_message(command("durdur",f"durdur@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["durdur",f"durdur@{BOT_USERNAME}"]) & other_filters)
 @errors
 @authorized_users_only
 async def durdur(_, message: Message):
@@ -36,7 +36,7 @@ async def durdur(_, message: Message):
         await message.reply_text(f"**{BN} :-** 🤐 Durduruldu!")
 
 
-@Client.on_message(command("devam",f"devam@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["devam",f"devam@{BOT_USERNAME}"]) & other_filters)
 @errors
 @authorized_users_only
 async def devam(_, message: Message):
@@ -51,7 +51,7 @@ async def devam(_, message: Message):
         await message.reply_text(f"**{BN} :-** 🥳 Devam Ediyor!")
 
 
-@Client.on_message(command("son",f"son@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["son",f"son@{BOT_USERNAME}"]) & other_filters)
 @errors
 @authorized_users_only
 async def bitir(_, message: Message):
@@ -67,7 +67,7 @@ async def bitir(_, message: Message):
         await message.reply_text(f"**{BN} :-** ❌ Bitti!")
 
 
-@Client.on_message(command("atla",f"atla@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["atla",f"atla@{BOT_USERNAME}"]) & other_filters)
 @errors
 @authorized_users_only
 async def atla(_, message: Message):
