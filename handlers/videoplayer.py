@@ -13,7 +13,7 @@ from helpers.decorators import authorized_users_only
 from helpers.filters import command
 from youtube_dl import YoutubeDL
 from youtube_dl.utils import ExtractorError
-from pytgcalls.types.input_stream import (
+from pytgcalls.pytgcalls.types.input_stream import (
     VideoParameters,
     AudioParameters,
     InputAudioStream,
