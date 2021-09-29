@@ -42,7 +42,7 @@ from pytgcalls.types.input_stream import (
 
 SIGINT: int = 2
 
-app = Client(Veez.SESSION_NAME, Veez.API_ID, Veez.API_HASH)
+app = Client(SESSION_NAME, API_ID, API_HASH)
 
 call_py = PyTgCalls(app)
 
@@ -128,13 +128,13 @@ async def startvideo(client, m: Message):
 
                         text="✨ ɢʀᴏᴜᴘ",
 
-                        url="https://t.me/VeezSupportGroup"),
+                        url="https://t.me/intikamailesi"),
 
                     InlineKeyboardButton(
 
                         text="🌻 ᴄʜᴀɴɴᴇʟ",
 
-                        url="https://t.me/levinachannel")
+                        url="https://t.me/akasyasohbet")
 
                 ]
 
