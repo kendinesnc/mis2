@@ -9,3 +9,4 @@ aiohttp
 asyncio
 youtube_search
 search_engine_parser
+pytgcalls
