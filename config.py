@@ -1,8 +1,15 @@
 from os import getenv
 
+from os import path, getenv
 from dotenv import load_dotenv
 
+if path.exists("local.env"):
+    load_dotenv("local.env")
+
 load_dotenv()
+
+class Veez(object):
+        admins = {}
 
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
