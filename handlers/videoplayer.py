@@ -248,7 +248,8 @@ async def startvideo(client, m: Message):
 
                     reply_markup=keyboard,
 
-                    caption=f"💡 **video akışı başladı!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{duration}`\n\n» **join to video chat on the top to watch the video.**")
+                    caption=f"💡 **video akışı başladı!**\n\n🏷 **Name:** {title}\n⏱ **Duration:** `{duration}`\n\n» **videoyu izlemek için üstte görüntülü sohbete katılın.**" )
+")
 
                 return await msg.delete()
 
@@ -262,13 +263,13 @@ async def startvideo(client, m: Message):
 
     elif replied.video or replied.document:
 
-        msg = await m.reply("📥 downloading video...")
+        msg = await m.reply("📥 Video İndirilyor..")
 
         video = await client.download_media(m.reply_to_message)
 
         chat_id = m.chat.id
 
-        await msg.edit("🔁 **preparing video...**")
+        await msg.edit("🔁 **Video Hazırlanıyor...**")
 
         os.system(f"ffmpeg -i '{video}' -f s16le -ac 1 -ar 48000 'audio{chat_id}.raw' -y -f rawvideo -r 20 -pix_fmt yuv420p -vf scale=640:360 'video{chat_id}.raw' -y")
 
