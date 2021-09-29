@@ -2,9 +2,9 @@ import os
 import asyncio
 import subprocess
 from pytgcalls.pytgcalls import idle
-from pytgcalls. import PyTgCalls
-from pytgcalls import StreamType
-from pytgcalls.types import Update
+from pytgcalls.pytgcalls import PyTgCalls
+from pytgcalls.pytgcalls import StreamType
+from pytgcalls.pytgcalls.types import Update
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, filters
 from pyrogram.types import Message
